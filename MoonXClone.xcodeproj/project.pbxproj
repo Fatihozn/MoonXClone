@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3D6FF79D2CC6BF980065D89E /* NeonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3D6FF79C2CC6BF980065D89E /* NeonSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3D6FF7612CC697710065D89E /* MoonXClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonXClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +18,7 @@
 		3D6FF7732CC697740065D89E /* Exceptions for "MoonXClone" folder in "MoonXClone" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = 3D6FF7602CC697710065D89E /* MoonXClone */;
 		};
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6FF79D2CC6BF980065D89E /* NeonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = MoonXClone;
 			packageProductDependencies = (
+				3D6FF79C2CC6BF980065D89E /* NeonSDK */,
 			);
 			productName = MoonXClone;
 			productReference = 3D6FF7612CC697710065D89E /* MoonXClone.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 3D6FF7582CC697710065D89E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3D6FF79B2CC6BF980065D89E /* XCRemoteSwiftPackageReference "neon-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3D6FF7622CC697710065D89E /* Products */;
 			projectDirPath = "";
@@ -147,12 +156,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FAV9HQR94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoonXClone/Info.plist;
+				INFOPLIST_FILE = MoonXClone/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,6 +169,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FthZn.MoonXClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -175,12 +188,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FAV9HQR94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoonXClone/Info.plist;
+				INFOPLIST_FILE = MoonXClone/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +201,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FthZn.MoonXClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D6FF79B2CC6BF980065D89E /* XCRemoteSwiftPackageReference "neon-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neon-apps/neon-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D6FF79C2CC6BF980065D89E /* NeonSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D6FF79B2CC6BF980065D89E /* XCRemoteSwiftPackageReference "neon-sdk" */;
+			productName = NeonSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D6FF7592CC697710065D89E /* Project object */;
 }
